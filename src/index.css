@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+.font-viet-serif {
+  font-family: "Times New Roman", Times, "Lora", Georgia, serif;
+}
+
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: "Times New Roman", Times, "Lora", serif !important;
+  }
+
+  .no-print, header, footer, .drawer, nav, .fixed:not(#print-root) {
+    display: none !important;
+  }
+
+  #authentic-print-page {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    font-family: "Times New Roman", Times, "Lora", serif !important;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 10mm 12mm 10mm 12mm;
+  }
+}
+

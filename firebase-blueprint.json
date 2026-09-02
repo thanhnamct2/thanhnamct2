@@ -1,0 +1,65 @@
+{
+  "entities": {
+    "students": {
+      "title": "Students",
+      "description": "Student Curriculum Vitae (Sơ yếu lý lịch học sinh) submissions",
+      "type": "object",
+      "properties": {
+        "fullName": { "type": "string", "description": "Student full name" },
+        "className": { "type": "string", "description": "Class name e.g. 10A1" },
+        "schoolName": { "type": "string", "description": "School name" },
+        "academicYear": { "type": "string", "description": "Academic year" },
+        "gender": { "type": "string", "description": "Gender" },
+        "phoneZalo": { "type": "string", "description": "Phone / Zalo number" },
+        "gmail": { "type": "string", "description": "Gmail address" },
+        "birthDate": { "type": "string", "description": "Date of birth" },
+        "birthPlace": { "type": "string", "description": "Place of birth" },
+        "ethnicity": { "type": "string", "description": "Ethnicity" },
+        "isYouthUnionMember": { "type": "boolean", "description": "Youth union membership" },
+        "address": { "type": "string", "description": "Current / permanent address" },
+        "homePhone": { "type": "string", "description": "Home phone" },
+        "siblingCount": { "type": "string", "description": "Number of siblings" },
+        "childOrder": { "type": "string", "description": "Birth order among siblings" },
+        "familyCircumstance": { "type": "string", "description": "Family circumstance details" },
+        "transportation": { "type": "string", "description": "Means of transportation" },
+        "licensePlate": { "type": "string", "description": "Vehicle license plate" },
+        "conductLastYear": { "type": "string", "description": "Conduct grade last year" },
+        "academicLastYear": { "type": "string", "description": "Academic grade last year" },
+        "gpaLastYear": { "type": "string", "description": "GPA last year" },
+        "grade10AdmissionScore": { "type": "string", "description": "Grade 10 admission score" },
+        "weakSubjects": { "type": "string", "description": "Weak subjects" },
+        "talents": { "type": "string", "description": "Talents and hobbies" },
+        "goals": { "type": "string", "description": "Goals for the academic year" },
+        "achievements": { "type": "string", "description": "Past achievements" },
+        "fatherName": { "type": "string", "description": "Father name" },
+        "fatherBirthYear": { "type": "string", "description": "Father birth year" },
+        "fatherJob": { "type": "string", "description": "Father occupation" },
+        "fatherPhone": { "type": "string", "description": "Father phone" },
+        "fatherAddress": { "type": "string", "description": "Father address" },
+        "motherName": { "type": "string", "description": "Mother name" },
+        "motherBirthYear": { "type": "string", "description": "Mother birth year" },
+        "motherJob": { "type": "string", "description": "Mother occupation" },
+        "motherPhone": { "type": "string", "description": "Mother phone" },
+        "motherAddress": { "type": "string", "description": "Mother address" },
+        "livingWith": { "type": "string", "description": "Living with whom" },
+        "guardianName": { "type": "string", "description": "Guardian name" },
+        "guardianJob": { "type": "string", "description": "Guardian occupation" },
+        "guardianPhone": { "type": "string", "description": "Guardian phone" },
+        "guardianAddress": { "type": "string", "description": "Guardian address" },
+        "studentSignerName": { "type": "string", "description": "Student signature name" },
+        "fatherSignerName": { "type": "string", "description": "Father signature name" },
+        "motherSignerName": { "type": "string", "description": "Mother signature name" },
+        "signDate": { "type": "string", "description": "Signature date" },
+        "createdAt": { "type": "string", "description": "Creation ISO timestamp" },
+        "updatedAt": { "type": "string", "description": "Last update ISO timestamp" }
+      },
+      "required": ["fullName", "className"]
+    }
+  },
+  "firestore": {
+    "students": {
+      "entity": "students",
+      "description": "Collection of submitted student curriculum vitae profiles"
+    }
+  }
+}

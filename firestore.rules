@@ -1,0 +1,22 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Students profile collection
+    match /students/{studentId} {
+      // Allow reading submitted student profiles
+      allow read: if true;
+      
+      // Allow creating a new profile submission (requires valid data)
+      allow create: if request.resource.data.fullName is string
+                    && request.resource.data.fullName.size() > 0;
+      
+      // Allow updating an existing profile
+      allow update: if true;
+      
+      // Allow deletion
+      allow delete: if true;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Biểu Mẫu Sơ Yếu Lý Lịch Học Sinh",
+  "description": "Cổng tiếp nhận và quản lý Sơ yếu lý lịch học sinh trực tuyến, chia sẻ link cho học sinh tự điền và lưu trữ lên cơ sở dữ liệu đám mây Firebase Firestore, xuất PDF chuẩn A4 và Excel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
